@@ -26,11 +26,11 @@ DigitalOut reset(p26);          // ESP RST pin
 Timer t;
 
 // ----------------------------------- Enter Access Point Credentials Here -------------------------------------------------
-char ssid[32] = "MSU_IOT";       // enter WiFi router ssid inside the quotes
-char pwd [32] = "msucowboys";     // enter WiFi router password inside the quotes
+char ssid[32] = "YOURWIFI";       // enter WiFi router ssid inside the quotes
+char pwd [32] = "YOURPASSWORD";     // enter WiFi router password inside the quotes
 
-// The HTTP requests for the time and weather from ThingSpeak
-char timeAPI[] =    "GET /apps/thinghttp/send_request?api_key=GPZOQ1CYCORFIET5 HTTP/1.1\r\nHost: api.thingspeak.com\r\n";
+// The HTTP requests for the time and weather from ThingSpeak. Note: The API keys should be your own unique keys.
+char timeAPI[] =    "GET /apps/thinghttp/send_request?api_key=GPZOQ1CYCORFIET5 HTTP/1.1\r\nHost: api.thingspeak.com\r\n"; 
 char weatherAPI[] = "GET /apps/thinghttp/send_request?api_key=IRXOT0ZPTZLRPFT0 HTTP/1.1\r\nHost: api.thingspeak.com\r\n";
 char closeConnection[] = "Connection: close\r\n\r\n";
 char httpPort[] = "8080";                  // Set HTTP port
